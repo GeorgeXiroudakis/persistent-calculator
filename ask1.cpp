@@ -93,9 +93,13 @@ int FastCalculate (int a, int b, int mode){
                 }
             }
         default : // just in case a worng mode value goes through
-            cerr << "something went wrong with the mode plse try again."; // error
+            cerr << "something went wrong with the mode pls try again."; // error
             error("something with the mode.");
     }
+
+    cerr << "something went wrong with the mode pls try again."; // to avoid warnig on compilation
+    error("something with the mode.");
+	return 0;
 }
 
 
